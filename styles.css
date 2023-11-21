@@ -1,0 +1,206 @@
+.book0 {
+    height: 480px;
+  }
+  .book0 .cover-face {
+    background-image: url("gelashvili.jpg");
+  }
+  .book0 .cover-face::before {
+    background: #eee;
+  }
+  .book0 .cover-spine {
+    background: #f8f8f8;
+    width: 18% !important;
+  }
+  .book0 .cover-spine .cover-spine-text {
+    color: #000;
+    transform: scale(-1, 1) translate(-32px, 430px) rotate(-90deg);
+    width: 400px;
+  }
+  .book0 .cover-spine .cover-spine-text i {
+    background: #000;
+  }
+  .book0 .cover-spine:after {
+    color: #000;
+  }
+  .book1 {
+    height: 480px;
+  }
+  .book1 .cover-face {
+    background-image: url("fleg.jpg");
+  }
+  .book1 .cover-face::before {
+    background: url("https://ozon-st.cdn.ngenix.net/multimedia/1011915048.jpg");
+  }
+  .book1 .cover-spine {
+    background: url("https://ozon-st.cdn.ngenix.net/multimedia/1011915048.jpg");
+    background: #e30016;
+    width: 18% !important;
+  }
+  .book1 .cover-spine .cover-spine-text {
+    transform: scale(-1, 1) translate(-32px, 430px) rotate(-90deg);
+    width: 400px;
+  }
+  .book1 .cover-spine:after {
+    color: #fff;
+  }
+  .book2 {
+    margin-left: 40px!important;
+    height: 480px;
+  }
+  .book2 .cover:after {
+    transform: translateZ(-100px);
+  }
+  .book2 .cover-face {
+    background-image: url("kundera.jpg");
+  }
+  .book2 .cover-face::before {
+    background: #84857e;
+  }
+  .book2 .cover-spine {
+    background: #84857e;
+    width: 100px !important;
+  }
+  .book2 .cover-spine .cover-spine-text {
+    transform: scale(-1, 1) translate(-59px, 430px) rotate(-90deg);
+    width: 400px;
+  }
+  .book2 .cover-spine:after {
+    color: #fff;
+  }
+  .book3 {
+    height: 460px;
+  }
+  .book3 .cover:after {
+    transform: translateZ(-60px);
+  }
+  .book3 .cover-face {
+    background-image: url("tutashxia.jpg");
+  }
+  .book3 .cover-face::before {
+    background: #cb8832;
+  }
+  .book3 .cover-spine {
+    background: #cb8832;
+    width: 60px !important;
+  }
+  .book3 .cover-spine .cover-spine-text {
+    transform: scale(-1, 1) translate(-32px, 410px) rotate(-90deg);
+    width: 380px;
+  }
+  .book3 .cover-spine:after {
+    color: #fff;
+  }
+  .cover-spine-text {
+    color: #fff;
+    font-size: 14px;
+  }
+  .cover-spine-text i {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 10px;
+  }
+  .cover-spine-text big {
+    position: relative;
+    font-size: 20px;
+    top: 1px;
+  }
+  .polka {
+    margin: 5rem;
+  }
+  .polka > div {
+    flex: 1;
+    min-width: 323px;
+    margin: 0 -200px 0 0;
+  }
+  .polka > div > div:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 21px;
+    bottom: 12px;
+    transform: translateZ(-63px);
+    left: -21px;
+    z-index: -9;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    filter: blur(15px);
+  }
+  .polka > div:first-child > div:after {
+    display: none;
+  }
+  .wrap {
+    perspective: 1000px;
+    width: 323px;
+    margin: 5rem auto;
+    display: inline-block;
+  }
+  .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    animation: ann 8s infinite;
+  }
+  .cover div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .cover-face {
+    background-size: contain;
+    border-radius: 0px 3px 3px 0;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+  }
+  .cover-face::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #000;
+    background-size: auto 100%;
+    left: -1px;
+    top: 1px;
+    bottom: 1px;
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.25);
+  }
+  .cover-spine {
+    background-size: cover;
+    width: 18% !important;
+    transform: rotateY(90deg) translateZ(0);
+    transform-origin: 0 0;
+    border-radius: 0 3px 3px 0;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+  }
+  .cover-spine-text {
+    display: block;
+    transform-origin: left;
+    font-family: Cambria, serif;
+  }
+  .cover-spine:after {
+    content: src="logo.png";
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 20px;
+    transform: scale(-1, 1);
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+  @keyframes ann {
+    0% {
+      transform: rotateY(45deg);
+    }
+    50% {
+      transform: rotateY(60deg);
+    }
+    100% {
+      transform: rotateY(45deg);
+    }
+  }
+   
