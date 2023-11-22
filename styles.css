@@ -1,8 +1,12 @@
+body{
+    font-family: ;
+}
+
 .book0 {
     height: 480px;
   }
   .book0 .cover-face {
-    background-image: url("gelashvili.jpg");
+    background-image: url("different-seasons-9781501143489_hr.jpg");
   }
   .book0 .cover-face::before {
     background: #eee;
@@ -26,14 +30,14 @@
     height: 480px;
   }
   .book1 .cover-face {
-    background-image: url("fleg.jpg");
+    background-image: url("akutagava.jpeg");
   }
   .book1 .cover-face::before {
     background: url("https://ozon-st.cdn.ngenix.net/multimedia/1011915048.jpg");
   }
   .book1 .cover-spine {
     background: url("https://ozon-st.cdn.ngenix.net/multimedia/1011915048.jpg");
-    background: #e30016;
+    background: #9a000f;
     width: 18% !important;
   }
   .book1 .cover-spine .cover-spine-text {
@@ -54,10 +58,10 @@
     background-image: url("kundera.jpg");
   }
   .book2 .cover-face::before {
-    background: #84857e;
+    background: rgb(126, 132, 133);
   }
   .book2 .cover-spine {
-    background: #84857e;
+    background: rgb(68, 145, 190) ;
     width: 100px !important;
   }
   .book2 .cover-spine .cover-spine-text {
@@ -74,13 +78,13 @@
     transform: translateZ(-60px);
   }
   .book3 .cover-face {
-    background-image: url("tutashxia.jpg");
+    background-image: url("dost.jpg");
   }
   .book3 .cover-face::before {
-    background: #cb8832;
+    background: #c76b2e;
   }
   .book3 .cover-spine {
-    background: #cb8832;
+    background: #9d5e0c;
     width: 60px !important;
   }
   .book3 .cover-spine .cover-spine-text {
